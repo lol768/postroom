@@ -1,0 +1,14 @@
+spring.resources.chain.strategy.content:
+  enabled: true
+  paths: /assets/**
+
+server:
+  forward-headers-strategy: native
+  port: 8080
+
+postroom.roles:
+  admin-webgroup: in-postroom-admin
+  sysadmin-webgroup: in-postroom-sysadmin
+  masqueraders-webgroup: in-postroom-masqueraders
+
+audit.application-key: postroom
