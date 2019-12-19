@@ -18,8 +18,8 @@ jobs:
     - name: Set-up FA Pro access
       env:
         FA_PRO: ${{ secrets.FA_PRO_TOKEN }}
-        run: |
-          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
-          npm config set "//npm.fontawesome.com/:_authToken" $FA_PRO 
+      run: |
+        npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+        npm config set "//npm.fontawesome.com/:_authToken" $FA_PRO 
     - name: Build with Gradle
       run: ./gradlew test
