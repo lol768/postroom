@@ -26,17 +26,11 @@ configurations {
   }
 }
 
-val nexusUser: String by project
-val nexusPassword: String by project
 
 repositories {
   mavenCentral()
   maven {
-    credentials {
-      username = nexusUser
-      password = nexusPassword
-    }
-    url = uri("https://mvn.elab.warwick.ac.uk/nexus/content/groups/public")
+    url = uri("https://mvn.elab.warwick.ac.uk/nexus/repository/public-anonymous/")
   }
 }
 
