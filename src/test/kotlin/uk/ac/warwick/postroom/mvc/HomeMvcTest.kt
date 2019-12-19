@@ -13,7 +13,7 @@ class HomeMvcTest : MvcTest() {
   fun homeSignedIn() {
     mvc.get("/").andExpect {
       status { isOk }
-      content { string(containsString("Greetings!")) }
+      content { string(containsString("📦")) }
     }
   }
 
